@@ -1,0 +1,152 @@
+Starting job 75564 on c1-5 at Sat May 21 15:16:10 CEST 2022
+
+Start
+Started analysis of control.fq.gz
+Started analysis of subject.fq.gz
+Approx 5% complete for control.fq.gz
+Approx 5% complete for subject.fq.gz
+Approx 10% complete for control.fq.gz
+Approx 10% complete for subject.fq.gz
+Approx 15% complete for control.fq.gz
+Approx 15% complete for subject.fq.gz
+Approx 20% complete for control.fq.gz
+Approx 20% complete for subject.fq.gz
+Approx 25% complete for control.fq.gz
+Approx 25% complete for subject.fq.gz
+Approx 30% complete for control.fq.gz
+Approx 30% complete for subject.fq.gz
+Approx 35% complete for control.fq.gz
+Approx 35% complete for subject.fq.gz
+Approx 40% complete for control.fq.gz
+Approx 40% complete for subject.fq.gz
+Approx 45% complete for control.fq.gz
+Approx 45% complete for subject.fq.gz
+Approx 50% complete for control.fq.gz
+Approx 50% complete for subject.fq.gz
+Approx 55% complete for control.fq.gz
+Approx 55% complete for subject.fq.gz
+Approx 60% complete for control.fq.gz
+Approx 60% complete for subject.fq.gz
+Approx 65% complete for control.fq.gz
+Approx 65% complete for subject.fq.gz
+Approx 70% complete for control.fq.gz
+Approx 70% complete for subject.fq.gz
+Approx 75% complete for control.fq.gz
+Approx 75% complete for subject.fq.gz
+Approx 80% complete for control.fq.gz
+Approx 80% complete for subject.fq.gz
+Approx 85% complete for control.fq.gz
+Approx 85% complete for subject.fq.gz
+Approx 90% complete for control.fq.gz
+Approx 90% complete for subject.fq.gz
+Approx 95% complete for control.fq.gz
+Approx 95% complete for subject.fq.gz
+Approx 100% complete for control.fq.gz
+Analysis complete for control.fq.gz
+Approx 100% complete for subject.fq.gz
+Analysis complete for subject.fq.gz
+TrimmomaticSE: Started with arguments:
+ -threads 4 subject.fq.gz suboutput.fq.gz ILLUMINACLIP:../ref/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+ILLUMINACLIP: Using 0 prefix pairs, 2 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Reads: 3000000 Surviving: 2986366 (99.55%) Dropped: 13634 (0.45%)
+TrimmomaticSE: Completed successfully
+[bwa_index] Pack FASTA... 0.63 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=181405278, availableWord=24764288
+[BWTIncConstructFromPacked] 10 iterations done. 40849550 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 75465518 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 106228238 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 133566174 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 157860206 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 179448734 characters processed.
+[bwt_gen] Finished constructing BWT in 61 iterations.
+[bwa_index] 50.02 seconds elapse.
+[bwa_index] Update BWT... 0.35 sec
+[bwa_index] Pack forward-only FASTA... 0.39 sec
+[bwa_index] Construct SA from BWT and Occ... 24.05 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index ../ref/ref.fa
+[main] Real time: 76.523 sec; CPU: 75.454 sec
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 410586 sequences (40000061 bp)...
+[M::process] read 410242 sequences (40000016 bp)...
+[M::mem_process_seqs] Processed 410586 reads in 65.972 CPU sec, 16.657 real sec
+[M::process] read 409718 sequences (40000112 bp)...
+[M::mem_process_seqs] Processed 410242 reads in 65.704 CPU sec, 16.565 real sec
+[M::process] read 414574 sequences (40000041 bp)...
+[M::mem_process_seqs] Processed 409718 reads in 66.225 CPU sec, 16.693 real sec
+[M::process] read 412610 sequences (40000073 bp)...
+[M::mem_process_seqs] Processed 414574 reads in 65.914 CPU sec, 16.620 real sec
+[M::process] read 409846 sequences (40000118 bp)...
+[M::mem_process_seqs] Processed 412610 reads in 65.987 CPU sec, 16.635 real sec
+[M::process] read 410390 sequences (40000023 bp)...
+[M::mem_process_seqs] Processed 409846 reads in 66.205 CPU sec, 16.703 real sec
+[M::process] read 108400 sequences (10580860 bp)...
+[M::mem_process_seqs] Processed 410390 reads in 65.043 CPU sec, 16.401 real sec
+[M::mem_process_seqs] Processed 108400 reads in 17.219 CPU sec, 4.343 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 4 ../ref/ref.fa suboutput.fq.gz
+[main] Real time: 121.780 sec; CPU: 479.313 sec
+[bam_sort_core] merging from 2 files...
+[mpileup] 1 samples in 1 input files
+TrimmomaticSE: Started with arguments:
+ -threads 4 control.fq.gz conoutput.fq.gz ILLUMINACLIP:../ref/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:25
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+ILLUMINACLIP: Using 0 prefix pairs, 2 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Reads: 3000000 Surviving: 2967863 (98.93%) Dropped: 32137 (1.07%)
+TrimmomaticSE: Completed successfully
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 410192 sequences (40000049 bp)...
+[M::process] read 410474 sequences (40000008 bp)...
+[M::mem_process_seqs] Processed 410192 reads in 65.366 CPU sec, 16.512 real sec
+[M::process] read 409650 sequences (40000116 bp)...
+[M::mem_process_seqs] Processed 410474 reads in 65.713 CPU sec, 16.580 real sec
+[M::process] read 412198 sequences (40000012 bp)...
+[M::mem_process_seqs] Processed 409650 reads in 65.441 CPU sec, 16.515 real sec
+[M::process] read 409192 sequences (40000008 bp)...
+[M::mem_process_seqs] Processed 412198 reads in 64.910 CPU sec, 16.382 real sec
+[M::process] read 409144 sequences (40000001 bp)...
+[M::mem_process_seqs] Processed 409192 reads in 64.984 CPU sec, 16.400 real sec
+[M::process] read 409082 sequences (40000173 bp)...
+[M::mem_process_seqs] Processed 409144 reads in 65.566 CPU sec, 16.543 real sec
+[M::process] read 97931 sequences (9401471 bp)...
+[M::mem_process_seqs] Processed 409082 reads in 64.469 CPU sec, 16.267 real sec
+[M::mem_process_seqs] Processed 97931 reads in 15.350 CPU sec, 3.879 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 4 ../ref/ref.fa conoutput.fq.gz
+[main] Real time: 120.250 sec; CPU: 472.822 sec
+[bam_sort_core] merging from 2 files...
+[mpileup] 1 samples in 1 input files
+comparing Control_variant.vcf with Signal_variant.vcf 
+number of SNPs found: 22467
+comparing Signal_variant.vcf with Control_variant.vcf 
+number of SNPs found: 8328
+End
+
+Task and CPU usage stats:
+JobID           JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+75564        singulari+          4                                             00:15:22      0:0 
+75564.batch       batch          4        1   00:28:22          0   00:28:22   00:15:22      0:0 
+75564.extern     extern          4        1   00:00:00          0   00:00:00   00:15:22      0:0 
+
+Memory usage stats:
+JobID            MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+75564                                                                            
+75564.batch     887132K          0    887132K        0              0          0 
+75564.extern          0          0          0        0              0          0 
+
+Disk usage stats:
+JobID         MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+75564                                                                                                 
+75564.batch         0.03M               0          0.03M        0.00M                0          0.00M 
+75564.extern        0.01M               0          0.01M            0                0              0 
+
+Job 75564 completed at Sat May 21 15:31:32 CEST 2022
